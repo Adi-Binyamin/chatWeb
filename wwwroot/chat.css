@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    height: 80px;
+    background-color: #333;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.top-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.top-buttons button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.chat-area {
+    height: calc(100vh - 80px);
+    display: flex;
+}
+
+.chat-list {
+    width: 33.33%;
+    border-right: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+
+.chat-item {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.chat-item:hover {
+    background-color: #e5e5e5;
+}
+
+.current-chat {
+    width: 66.67%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+}
+
+.message-input {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    gap: 10px;
+}
+
+.message-input input {
+    flex: 1;
+    padding: 10px;
+}
+
+.message-input button {
+    padding: 10px 20px;
+}
+
+
+.friend-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.friend-popup-title {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.search-user-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.search-user-button, 
+.close-popup-button {
+    padding: 8px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-user-button {
+    background-color: #333;
+    color: white;
+}
+
+.search-user-button:hover {
+    background-color: #555;
+}
+
+.close-popup-button {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.close-popup-button:hover {
+    background-color: #d0d0d0;
+}
+
+.search-result-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chat Website</title>
+
+    <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+
+    <header class="top-bar">
+
+        <h1>CHAT WEBSITE</h1>
+
+        <div class="top-buttons">
+            <button id="friendsButton">My Friends</button>
+        </div>
+
+    </header>
+
+
+    <main class="chat-area">
+
+        <aside class="chat-list" id="chatList">
+        </aside>
+
+
+        <section class="current-chat">
+
+            <div class="chat-header" id="chatHeader">
+                Select a chat
+            </div>
+
+
+            <div class="messages" id="messages">
+
+                <p>Select a chat from the list to start messaging.</p>
+
+            </div>
+
+
+            <div class="message-input">
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Write a message..."
+                >
+
+                <button id="sendButton">
+                    Send
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+    <script src="chat.js"></script>
+</body>
+
+</html>
